@@ -10,5 +10,5 @@ Feature: A user should be able to add a specific women's summer dress and remove
 
    Scenario: Add another womens summer dress to shopping basket
       Given There is a women summer dress
-      When Item number "2" is added to basket
+      When Item number "1" is added to basket
       Then A dress should be in basket

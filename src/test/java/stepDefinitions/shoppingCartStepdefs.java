@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
@@ -28,6 +29,12 @@ public class shoppingCartStepdefs
         homePage = new HomePage(driver);
         dressesPage = new DressesPage(driver);
         cartPage = new ShoppingCartPage(driver);
+	}
+
+	@After
+	public void tearDown()
+	{
+		driver.quit();
 	}
 
     @Given("^There is a women summer dress$")
